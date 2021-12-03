@@ -14,12 +14,14 @@ from .clip import (
 from .common_reference import CommonReferenceRecording, common_reference
 from .remove_artifacts import RemoveArtifactsRecording, remove_artifacts
 from .remove_bad_channels import RemoveBadChannelsRecording, remove_bad_channels
+from .linear_map import LinearMapFilter, lin_map
 
 preprocessers_full_list = [
     # filter stuff
     FilterRecording,
     BandpassFilterRecording,
     NotchFilterRecording,
+    LinearMapFilter,
 
     # gain offset stuff
     NormalizeByQuantileRecording,
